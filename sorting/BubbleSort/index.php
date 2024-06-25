@@ -1,9 +1,6 @@
+
+
 <?php
-
-require_once './BubbleSort.php';
-
-$array = [1, 2, 3, 4, 6, 5, 5];
-
-bubbleSort($array);
-
-var_dump($array);
+$a = array_fill(5, 6, 'banana');
+print_r($a);
+?>
