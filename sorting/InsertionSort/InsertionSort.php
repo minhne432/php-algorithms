@@ -19,5 +19,9 @@ function insertionSort(array $array): array
 
 
 $array = [12, 11, 13, 5, 6];
+
+// Calling the insertionSort function
 $sortedArray = insertionSort($array);
+
+// Printing the sorted array
 print_r($sortedArray);
