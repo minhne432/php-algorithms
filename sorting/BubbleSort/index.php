@@ -1,11 +1,12 @@
 <?php
 
-function bubbleSort(array $array): array
+
+function bubbleSort(&$array)
 {
   $n = count($array);
 
   for ($i = 0; $i < $n - 1; $i++) {
-    for ($j = 0; $j < $n - $i - 1; $j++) {
+    for ($j = 0; $j < $n - 1; $j++) {
       if ($array[$j] > $array[$j + 1]) {
         $temp = $array[$j];
         $array[$j] = $array[$j + 1];
@@ -13,12 +14,10 @@ function bubbleSort(array $array): array
       }
     }
   }
-
-  return $array;
 }
 
 $array = [64, 34, 25, 12, 22, 11, 90];
 
-$sortedArray = bubbleSort($array);
+bubbleSort($array);
 
-print_r($sortedArray);
+print_r($array);
