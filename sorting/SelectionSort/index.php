@@ -23,7 +23,6 @@ function selectionSort(array $array): array
   return $array;
 }
 
-
 $array = [64, 25, 12, 22, 11];
 
 $sortedArray = selectionSort($array);
